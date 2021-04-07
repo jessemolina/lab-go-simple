@@ -1,8 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"reflect"
+)
 
 func main() {
-    fmt.Println("Hello, World!")
-}
+	var s string = "hello"
+	var i int = 10
+	var f float32 = 1.2
 
+	fmt.Println(reflect.TypeOf(s))
+	fmt.Println(s)
+	fmt.Println(reflect.TypeOf(i))
+	fmt.Println(reflect.TypeOf(f))
+}
